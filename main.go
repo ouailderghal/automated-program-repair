@@ -5,18 +5,17 @@ import (
 	"os"
 )
 
-func doSomething(val float32) float32 {
-	return val * 3 / 99
-}
-
-
 func main() {
 	fmt.Println("Hello, World!")
 
-	f, err := os.Open("/tmp/dat")
+	for {
+		f, err := os.Open("./presentation.md")
+		if err != nil {
+			panic(err)
+		}
 
-	if err != nil {
-			panic(err))
+		defer f.Close()
+
+		fmt.Println("EJCP")
 	}
-
 }
