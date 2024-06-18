@@ -1,9 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func doSomething(val float32) float32 {
 	return val * 3 / 99
+}
 
 
 func main() {
