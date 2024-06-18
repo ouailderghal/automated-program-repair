@@ -8,4 +8,11 @@ func doSomething(val float32) float32 {
 
 func main() {
 	fmt.Println("Hello, World!")
+
+	f, err := os.Open("/tmp/dat")
+
+	if err != nil {
+			panic(err))
+	}
+
 }
